@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Strike</title>
+		<link rel="icon" type="image/png" href="./images/strike_logo.png" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- toggles -->
+		<input type="checkbox" id="auth" />
+		<input type="checkbox" id="showLogin" />
+		<input type="checkbox" id="showSignup" />
+
+		<div class="page">
+			<!-- Header -->
+			<div class="header-container">
+				<div class="header-logo-container">
+					<img
+						src="./images/strike_logo.png"
+						alt="Strike Logo"
+						id="header-logo"
+					/>
+					<h1 class="strike">STRIKE</h1>
+				</div>
+				<header>
+					<nav>
+						<span id="home-link">
+							<a class="header-link" href="#">
+								<span></span>Home<span></span>
+							</a>
+						</span>
+						<a class="header-link" id="logout-btn" href="#">
+							<label for="auth">
+								<span></span>Logout<span></span>
+							</label>
+						</a>
+						<a class="header-link" id="login-btn" href="#">
+							<label for="showLogin">
+								<span></span>Login<span></span>
+							</label>
+						</a>
+						&nbsp;
+						<a class="header-link" id="signup-btn" href="#">
+							<label for="showSignup">
+								<span></span>Signup<span></span>
+							</label>
+						</a>
+					</nav>
+				</header>
+			</div>
+
+			<!-- LOGIN MODAL -->
+			<div class="modal login-modal">
+				<div class="card">
+					<h1>Login</h1>
+					<div class="field">
+						<label for="loginUser">Username</label>
+						<input
+							type="text"
+							id="loginUser"
+							placeholder="Enter username"
+						/>
+					</div>
+					<div class="field">
+						<label for="loginPass">Password</label>
+						<input
+							type="password"
+							id="loginPass"
+							placeholder="Enter password"
+						/>
+					</div>
+
+					<label for="auth" class="btn">Login</label>
+					<label for="showLogin" class="close">Cancel</label>
+				</div>
+			</div>
+
+			<!-- SIGNUP MODAL -->
+			<div class="modal signup-modal">
+				<div class="card">
+					<h2>Signup</h2>
+					<div class="field">
+						<label for="signupUser">Username</label>
+						<input
+							type="text"
+							id="signupUser"
+							placeholder="Choose username"
+						/>
+					</div>
+					<div class="field">
+						<label for="signupEmail">Email</label>
+						<input
+							type="email"
+							id="signupEmail"
+							placeholder="Enter email"
+						/>
+					</div>
+					<div class="field">
+						<label for="signupPass">Password</label>
+						<input
+							type="password"
+							id="signupPass"
+							placeholder="Create password"
+						/>
+					</div>
+
+					<label for="auth" class="btn">Signup</label>
+					<label for="showSignup" class="close">Cancel</label>
+				</div>
+			</div>
+
+			<!-- Landing Page -->
+			<main>
+				<div class="main-container">
+					<h2>Welcome to <span class="strike">Strike</span></h2>
+					<p>
+						Learn Computer Science, Web Development, and Generative
+						AI with interactive lessons and projects — all in one
+						place.
+					</p>
+					<a href="#courses" class="cta-btn">
+						Get Started &LongRightArrow;
+					</a>
+					<div class="features">
+						<div class="feature-card">
+							<div class="feature-container">
+								<h3>Interactive Videos</h3>
+								<p>
+									Hands-on tutorials to build real-world
+									projects. Each lesson is designed to give
+									you practical experience, step-by-step
+									guidance, and real coding challenges to
+									strengthen your understanding of concepts.
+								</p>
+							</div>
+						</div>
+						<div class="feature-card">
+							<div class="feature-container">
+								<h3>Expert Mentorship</h3>
+								<p>
+									Learn from experienced instructors. Our
+									mentors provide personalized guidance, code
+									reviews, and industry insights to help you
+									grow as a developer and successfully
+									complete projects with confidence.
+								</p>
+							</div>
+						</div>
+						<div class="feature-card">
+							<div class="feature-container">
+								<h3>Community Help</h3>
+								<p>
+									Join the community and collaborate together.
+									Share knowledge, ask questions, participate
+									in discussions, and work on projects with
+									peers from around the world, ensuring you
+									never feel stuck or alone in your learning
+									journey.
+								</p>
+							</div>
+						</div>
+						<div class="feature-card">
+							<div class="feature-container">
+								<h3>Project Showcase</h3>
+								<p>
+									Showcase your projects and receive feedback
+									from the community. Build a portfolio of
+									real-world projects that demonstrate your
+									skills and creativity, helping you attract
+									potential employers or collaborators for
+									future opportunities.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<!-- About Strike -->
+			<section class="about">
+				<div>
+					<h2>About <span class="strike">Strike</span></h2>
+					<div class="about-container">
+						<img
+							src="./images/strike_logo.png"
+							alt="Strike Logo"
+							class="about-logo"
+						/>
+						<p>
+							Strike is an innovative learning platform focused on
+							making computer science education accessible,
+							interactive, and impactful for everyone. Our goal is
+							to empower learners of all backgrounds to become
+							confident developers and problem-solvers through
+							guided learning and practical experience. We provide
+							a wide range of courses in web development, data
+							structures, algorithms, and GenAI — all crafted by
+							industry experts. Every module is designed to bridge
+							the gap between theory and real-world application,
+							ensuring you not only learn concepts but also build
+							meaningful projects. At Strike, learning is more
+							than just watching tutorials. You'll engage in
+							hands-on coding sessions, collaborate with peers,
+							and mentorship from top professionals. We believe in
+							learning by building, and that's why our learners
+							graduate with a strong portfolio that stands out.
+							Our mission is simple — to make tech education
+							inspiring, inclusive, and future-ready. Whether
+							you're a beginner exploring coding for the first
+							time or a professional looking to upskill, Strike
+							provides the tools, community, and confidence you
+							need to grow.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Our Courses -->
+			<section class="courses" id="courses">
+				<h2>Popular Learning Paths</h2>
+				<div class="course-grid">
+					<div class="course-card">
+						<div class="course-inner">
+							<div class="course-front">
+								<img
+									src="./images/webdev.avif"
+									alt="Web Development"
+								/>
+								<h3>Web Development</h3>
+								<p>
+									Master frontend and backend with HTML, CSS,
+									React, and Node.js through interactive
+									real-world projects.
+								</p>
+							</div>
+							<div class="course-back">
+								<img
+									src="./images/webdev.avif"
+									alt="Web Development"
+								/>
+								<h3>Web Development</h3>
+								<a href="#" class="enroll-btn">Enroll Now</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="course-card">
+						<div class="course-inner">
+							<div class="course-front">
+								<img src="./images/dsa.jpeg" alt="DSA" />
+								<h3>Data Structures & Algorithms</h3>
+								<p>
+									Strengthen your coding foundation and
+									problem-solving skills with expert-guided
+									lessons and challenges.
+								</p>
+							</div>
+							<div class="course-back">
+								<img src="./images/dsa.jpeg" alt="DSA" />
+								<h3>Data Structures & Algorithms</h3>
+								<a href="#" class="enroll-btn">Enroll Now</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="course-card">
+						<div class="course-inner">
+							<div class="course-front">
+								<img
+									src="./images/ai.jpeg"
+									alt="Generative AI"
+								/>
+								<h3>Generative AI</h3>
+								<p>
+									Learn to build AI-driven apps using large
+									language models, prompt engineering, and
+									modern AI tools.
+								</p>
+							</div>
+							<div class="course-back">
+								<img
+									src="./images/ai.jpeg"
+									alt="Generative AI"
+								/>
+								<h3>Generative AI</h3>
+								<a href="#" class="enroll-btn">Enroll Now</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="course-card">
+						<div class="course-inner">
+							<div class="course-front">
+								<img src="./images/cloud.jpeg" alt="Cloud" />
+								<h3>Cloud Computing</h3>
+								<p>
+									Deploy scalable apps on AWS and GCP, and
+									learn cloud fundamentals for modern
+									distributed systems.
+								</p>
+							</div>
+							<div class="course-back">
+								<img src="./images/cloud.jpeg" alt="Cloud" />
+								<h3>Cloud Computing</h3>
+								<a href="#" class="enroll-btn">Enroll Now</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="course-card">
+						<div class="course-inner">
+							<div class="course-front">
+								<img
+									src="./images/cybersecurity.jpeg"
+									alt="Cybersecurity"
+								/>
+								<h3>Cybersecurity</h3>
+								<p>
+									Learn ethical hacking, network protection,
+									and digital defense to secure systems from
+									cyber threats.
+								</p>
+							</div>
+							<div class="course-back">
+								<img
+									src="./images/cybersecurity.jpeg"
+									alt="Cybersecurity"
+								/>
+								<h3>Cybersecurity</h3>
+								<a href="#" class="enroll-btn">Enroll Now</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="course-card">
+						<div class="course-inner">
+							<div class="course-front">
+								<img src="./images/devops.jpg" alt="Devops" />
+								<h3>DevOps Engineering</h3>
+								<p>
+									Learn CI/CD pipelines, Docker, Kubernetes,
+									and cloud automation to bridge development
+									and deployment seamlessly.
+								</p>
+							</div>
+							<div class="course-back">
+								<img src="./images/devops.jpg" alt="Devops" />
+								<h3>DevOps Engineering</h3>
+								<a href="#" class="enroll-btn">Enroll Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Call to action -->
+			<section class="cta">
+				<h2>Start Learning Today!</h2>
+				<p>
+					Join thousands of learners building their future with
+					Strike.
+				</p>
+				<label for="showLogin" class="cta-btn">
+					Join Now &LongRightArrow;
+				</label>
+			</section>
+
+			<!-- FOOTER -->
+			<footer>
+				<p>
+					Made with<span id="heart">&nbsp; &heartsuit; &nbsp;</span>by
+					Rahul Singla
+				</p>
+
+				<div class="footer-links">
+					<a href="mailto:rahulsingla1710@gmail.com" target="_blank"
+						>Email Me</a
+					>
+					<a href="https://anxious-bug.netlify.app/" target="_blank"
+						>Portfolio</a
+					>
+					<a
+						href="https://www.linkedin.com/in/rahul-1710-singla/"
+						target="_blank"
+						>LinkedIn</a
+					>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
